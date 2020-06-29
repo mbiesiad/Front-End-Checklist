@@ -151,14 +151,14 @@ Niektóre materiały zawierają emotikony, które pomagają zrozumieć, jaki rod
 > * 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 > * 📖 [Supported Meta Tags](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-- [ ] **Windows Tiles:** ![Low][low_img] Windows tiles are present and linked.
+- [ ] **Windows Tiles:** ![Low][low_img] Kafelki Windows są obecne i połączone.
 
 ```html
-<!-- Microsoft Tiles -->
+<!-- Kafelki Windows -->
 <meta name="msapplication-config" content="browserconfig.xml" />
 ```
 
-Minimum required xml markup for the `browserconfig.xml` file is as follows:
+Minimalnie wymagany znacznik xml dla pliku `browserconfig.xml` wygląda następująco:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -176,25 +176,25 @@ Minimum required xml markup for the `browserconfig.xml` file is as follows:
 
 > * 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
-* [ ] **Canonical:** ![Medium][medium_img] Use `rel="canonical"` to avoid duplicate content.
+* [ ] **Canonical:** ![Medium][medium_img] Use `rel="canonical"` aby uniknąć powielania treści.
 
 ```html
-<!-- Helps prevent duplicate content issues -->
+<!-- Pomaga zapobiegać powielaniu problemów z treścią -->
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-read.html">
 ```
 
 > * 📖 [Use canonical URLs - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
 > * 📖 [5 common mistakes with rel=canonical - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
-### HTML tags
+### Tagi HTML
 
-* [ ] **Language attribute:** ![High][high_img] The `lang` attribute of your website is specified and related to the language of the current page.
+* [ ] **Atrybut języka:** ![High][high_img] Atrybut `lang` twojej witryny jest określony i związany z językiem bieżącej strony.
 
 ```html
 <html lang="en">
 ```
 
-* [ ] **Direction attribute:** ![Medium][medium_img] The direction of lecture is specified on the html tag (It can be used on another HTML tag).
+* [ ] **Atrybut direction:** ![Medium][medium_img] Kierunek odczytu jest określony na znaczniku HTML (może być użyty na innym znaczniku HTML).
 
 ```html
 <html dir="rtl">
@@ -202,13 +202,13 @@ Minimum required xml markup for the `browserconfig.xml` file is as follows:
 
 > * 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-* [ ] **Alternate language:** ![Low][low_img] The language tag of your website is specified and related to the language of the current page.
+* [ ] **Alternatywny język:** ![Low][low_img] Tag języka twojej witryny jest określony i powiązany z językiem bieżącej strony.
 
 ```html
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 ```
 
-* [ ] **x-default:** ![Low][low_img] The language tag of your website for international landing pages.
+* [ ] **x-default:** ![Low][low_img] Tag języka twojej witryny dla międzynarodowych stron docelowych.
 
 ```html
 <link rel="alternate" href="https://example.com/" hreflang="x-default" />
@@ -217,27 +217,27 @@ Minimum required xml markup for the `browserconfig.xml` file is as follows:
 > * 📖 [x-default - Google](https://webmasters.googleblog.com/2013/04/x-default-hreflang-for-international-pages.html)
 
 
-* [ ] **Conditional comments:** ![Low][low_img] Conditional comments are present for IE if needed.
+* [ ] **Komentarze warunkowe:** ![Low][low_img] W razie potrzeby komentarze warunkowe są dostępne dla IE.
 
 > * 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
-* [ ] **RSS feed:** ![Low][low_img] If your project is a blog or has articles, an RSS link was provided.
+* [ ] **Kanał RSS:** ![Low][low_img] Jeśli twój projekt jest blogiem lub zawiera artykuły, podano link RSS.
 
-* [ ] **CSS Critical:** ![Medium][medium_img] The CSS critical (or "above the fold") collects all the CSS used to render the visible portion of the page. It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
+* [ ] **CSS Critical:** ![Medium][medium_img] Krytyczny CSS (lub "above the fold") zbiera wszystkie CSS użyte do renderowania widocznej części strony. Jest osadzony przed głównym wywołaniem CSS i między `<style> </style>` w jednym wierszu (zminimalizowanym).
 
-> * 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automates this.
+> * 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automatyzuje to.
 
-* [ ] **CSS order:** ![High][high_img] All CSS files are loaded before any JavaScript files in the `<head>`. (Except the case where sometimes JS files are loaded asynchronously on top of your page).
+* [ ] **CSS order:** ![High][high_img] Wszystkie pliki CSS są ładowane przed plikami JavaScript w `<head>`. (Z wyjątkiem przypadku, gdy czasami pliki JS są ładowane asynchronicznie na górze strony).
 
 ### Social meta
 
-Visualize and generate automatically our social meta tags with [Meta Tags](https://metatags.io/)
+Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [Meta Tags](https://metatags.io/)
 
-***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
+***Facebook OG*** i ***Twitter Cards*** są, dla każdej strony, wysoko zalecane. Inne tagi mediów społecznościowych można rozważyć, jeśli kierujesz na nie określoną uwagę i chcesz zapewnić ich wyświetlanie.
 
-* [ ] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with false information. Images need to be at least 600 x 315 pixels, although 1200 x 630 pixels is recommended.
+* [ ] **Facebook Open Graph:** ![Low][low_img] Cały Facebook Open Graph (OG) jest przetestowany i niczego nie brakuje, ani nie ma niepoprawnych informacji. Obrazy muszą mieć co najmniej 600 x 315 pikseli, chociaż zaleca się 1200 x 630 pikseli.
 
-> **Notes:** Using `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
+> **Uwagi:** Używanie `og:image:width` oraz `og:image:height` określi wymiary obrazu dla crawlera, aby mógł natychmiast renderować obraz bez konieczności asynchronicznego pobierania i przetwarzania.
 
 ```html
 <meta property="og:type" content="website">
@@ -247,7 +247,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
-<!-- Next tags are optional but recommended -->
+<!-- Kolejne tagi są opcjonalne, ale zalecane -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 ```
@@ -271,76 +271,76 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 📖 [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
 > * 🛠 Test your page with the [Twitter card validator](https://cards-dev.twitter.com/validator)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
 ## HTML
 
-### Best practices
+### Najlepsze praktyki
 
-* [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
+* [ ] **Elementy semantyczne HTML5:** ![High][high_img] Elementy semantyczne HTML5 są używane odpowiednio (header, section, footer, main...).
 
 > * 📖 [HTML Reference](http://htmlreference.io/)
 
-* [ ] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error pages need to have their CSS integrated (no external call on the current server).
+* [ ] **Strony błędów:** ![High][high_img] Istnieje błąd strony 404 i 5xx. Pamiętaj, że strony błędów 5xx muszą mieć zintegrowany CSS (brak zewnętrznego połączenia na bieżącym serwerze).
 
-* [ ] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
+* [ ] **Noopener:** ![Medium][medium_img] W przypadku korzystania z zewnętrznych linków z `target="_blank"`, twój link powinien mieć atrybut `rel="noopener"` aby zapobiec przechwytywaniu kart. Jeśli potrzebujesz obsługi starszych wersji Firefoxa, użyj `rel="noopener noreferrer"`.
 
 > * 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
-* [ ] **Clean up comments:** ![Low][low_img] Unnecessary code needs to be removed before sending the page to production.
+* [ ] **Wyczyść komentarze:** ![Low][low_img] Niepotrzebny kod należy usunąć przed wysłaniem strony do produkcji.
 
-### HTML testing
+### Testowanie HTML
 
-* [ ] **W3C compliant:** ![High][high_img] All pages need to be tested with the W3C validator to identify possible issues in the HTML code.
+* [ ] **Zgodny z W3C:** ![High][high_img] Wszystkie strony należy przetestować za pomocą walidatora W3C, aby zidentyfikować możliwe problemy w kodzie HTML.
 
-> * 🛠 [W3C validator](https://validator.w3.org/)
+> * 🛠 [Walidator W3C](https://validator.w3.org/)
 
-* [ ] **HTML Lint:** ![High][high_img] I use tools to help me analyze any issues I could have on my HTML code.
+* [ ] **HTML Lint:** ![High][high_img] Korzystam z narzędzi, które pomagają mi analizować wszelkie problemy, które mogą wystąpić w kodzie HTML.
 
 > * 🛠 [Dirty markup](https://www.10bestdesign.com/dirtymarkup/)
 
 > * 🛠 [webhint](https://webhint.io/)
 
-* [ ] **Link checker:** ![High][high_img] There are no broken links in my page, verify that you don't have any 404 error.
+* [ ] **Link checker:** ![High][high_img] Na mojej stronie nie ma niedziałających linków, sprawdź, czy nie wystąpił błąd 404.
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-* [ ] **Adblockers test:** ![Medium][medium_img] Your website shows your content correctly with adblockers enabled (You can provide a message encouraging people to disable their adblocker).
+* [ ] **Test Adblockerów:** ![Medium][medium_img] Twoja strona wyświetla poprawnie twoje treści z włączonymi adblockerami (możesz dostarczyć wiadomość zachęcającą ludzi do wyłączenia ich adblockera).
 
 > * 📖 [Use AdBlocking in your Dev Environment](https://andreicioara.com/use-adblocking-in-your-dev-environment-48db500d9b86)
 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
 ## Webfonts
 
-> **Notes:** Using web fonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts and/or utilizing web font loaders to control behavior.
+> **Uwagi:** Używanie czcionek internetowych może powodować flashowanie niestylowanego tekstu / flashowanie niewidocznego tekstu - rozważ użycie czcionek zastępczych i/lub użycie programów ładujących czcionki internetowe do kontrolowania zachowania.
 > * 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations)
 
-* [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
+* [ ] **Format webfont:** ![High][high_img] WOFF, WOFF2 oraz TTF są obsługiwane przez wszystkie nowoczesne przeglądarki.
 
 > * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
 > * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2).
 > * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf)
 > * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **Webfont size:** ![High][high_img] Webfont sizes don't exceed 2 MB (all variants included).
+* [ ] **Rozmiar Webfont:** ![High][high_img] Rozmiary webfont nie przekraczają 2 MB (wszystkie warianty w zestawie).
 
-* [ ] **Webfont loader:** ![Low][low_img] Control loading behavior with a webfont loader
+* [ ] **Webfont loader:** ![Low][low_img] Kontroluj zachowanie ładowania za pomocą modułu ładującego webfont
 
 > * 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
 ## CSS
 
-> **Notes:** Take a look at [CSS guidelines](https://cssguidelin.es/) and [Sass Guidelines](https://sass-guidelin.es/) followed by most  Front-End developers. If you have a doubt about CSS properties, you can visit [CSS Reference](http://cssreference.io/). There is also a short [Code Guide](http://codeguide.co/) for consistency.
+> **Uwagi:** Rzuć okiem na [Wytyczne CSS](https://cssguidelin.es/) oraz [Wytyczne Sass](https://sass-guidelin.es/) obserwowane przez większość programistów Front-End. Jeśli masz wątpliwości co do właściwości CSS, możesz odwiedzić [CSS Reference](http://cssreference.io/). Jest też krótki [Code Guide](http://codeguide.co/) dla spójności.
 
 * [ ] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
 * [ ] **CSS Print:** ![Medium][medium_img] A print stylesheet is provided and is correct on each page.
@@ -408,13 +408,13 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
 ## Images
 
-> **Notes:** For a complete understanding of image optimization, check the free ebook **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
+> **Uwagi:** For a complete understanding of image optimization, check the free ebook **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
 
 ### Best practices
 
@@ -443,7 +443,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 * [ ] **Lazy loading:** ![Medium][medium_img] Images are lazyloaded (A noscript fallback is always provided).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
@@ -488,7 +488,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 > * 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
@@ -538,7 +538,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 📖 [CSP Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
 > * 📖 [Content Security Policy Reference](https://content-security-policy.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
@@ -609,13 +609,13 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 > * 🛠 [GTmetrix - Website speed and performance optimization](https://gtmetrix.com/)
 > * 🛠 [Speedrank - Improve the performance of your website](https://speedrank.app/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
 ## Accessibility
 
-> **Notes:** You can watch the playlist [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
+> **Uwagi:** You can watch the playlist [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
 
 ### Best practices
 
@@ -658,7 +658,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 
 > * 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
@@ -707,7 +707,7 @@ Visualize and generate automatically our social meta tags with [Meta Tags](https
 <link rel="next" href="https://example.com/?page=3">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
@@ -739,7 +739,7 @@ If you want to show you are following the rules of the Front-End Checklist, put 
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 ---
 
@@ -803,7 +803,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ powrót do góry](#spis-treści)**
 
 [low_img]: data/images/priority/low.svg
 [medium_img]: data/images/priority/medium.svg
