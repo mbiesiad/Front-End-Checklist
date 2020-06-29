@@ -3,11 +3,11 @@
   <img src="https://raw.githubusercontent.com/thedaviddias/Front-End-Checklist/master/data/images/logo-front-end-checklist.jpg" alt="Front-End Checklist" width="130">
   <br>
     <br>
-  Front-End Checklist
+  Checklista Frontend
   <br>
 </h1>
 
-<h4 align="center">The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website / HTML page to production.</h4>
+<h4 align="center">Lista kontrolna frontend to wyczerpująca lista wszystkich elementów, które potrzebujesz mieć / musisz przetestować przed uruchomieniem witryny/strony HTML w produkcji.</h4>
 
 <p align="center">
   <a href="http://makeapullrequest.com">
@@ -25,18 +25,18 @@
 </p>
 
 <p align="center">
-  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="https://frontendchecklist.io">Website</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
+  <a href="#how-to-use">Jak korzystać</a> • <a href="#contributing">Współtworzenie</a> • <a href="https://frontendchecklist.io">Strona</a> • <a href="https://www.producthunt.com/posts/front-end-checklist">Product Hunt</a>
 </p>
 <p align="center">
-    <span>Other Checklists:</span>
+    <span>Inne Checklisty:</span>
     <br>
   <a href="https://github.com/thedaviddias/Front-End-Performance-Checklist#---------front-end-performance-checklist-">🎮 Front-End Performance Checklist</a> • <a href="https://github.com/thedaviddias/Front-End-Design-Checklist#front-end-design-checklist">💎 Front-End Design Checklist</a>
 </p>
 
 
-It is based on Front-End developers' years of experience, with the additions coming from some other open-source checklists.
+Opiera się ona na wieloletnim doświadczeniu programistów frontend, a dodatki pochodzą z innych list kontrolnych typu open source.
 
-## Table of Contents
+## Spis treści
 
 1. **[Head](#head)**
 2. **[HTML](#html)**
@@ -52,31 +52,31 @@ It is based on Front-End developers' years of experience, with the additions com
 
 ---
 
-## How to use?
+## Jak korzystać?
 
-All items in the **Front-End Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use 3 levels of flexibility:
+Wszystkie elementy w **Checkliście Front-End** są wymagane w przypadku większości projektów, ale niektóre elementy można pominąć lub nie są one niezbędne (w przypadku administracyjnej aplikacji internetowej może nie być potrzebny na przykład kanał RSS). Wybieramy 3 poziomy elastyczności:
 
-* ![Low][low_img] means that the item is **recommended** but can be omitted in some particular situations.
-* ![Medium][medium_img] means that the item is **highly recommended** and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
-* ![High][high_img] means that the item **can't be omitted** by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
+* ![Niski][low_img] oznacza, że element jest **zalecany**, ale można go pominąć w niektórych szczególnych sytuacjach.
+* ![Średni][medium_img] oznacza, że element jest **wysoce zalecany** i może zostać ostatecznie pominięty w niektórych naprawdę szczególnych przypadkach. Niektóre elementy, jeśli zostaną pominięte, mogą mieć negatywne skutki pod względem wydajności lub SEO.
+* ![Wysoki][high_img] oznacza, że elementu **nie można pominąć** z jakiegokolwiek powodu. Możesz spowodować dysfunkcję strony lub problemy z dostępnością lub SEO. Priorytetem testów muszą być najpierw te elementy.
 
-Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
+Niektóre materiały zawierają emotikony, które pomagają zrozumieć, jaki rodzaj treści / pomocy można znaleźć na liście kontrolnej:
 
-* 📖: documentation or article
-* 🛠: online tool / testing tool
-* 📹: media or video content
+* 📖: dokumentacja lub artykuł
+* 🛠: narzędzie online / narzędzie testujące
+* 📹: treści multimedialne lub wideo
 
-> You can contribute to the ***Front-End Checklist App*** reading the [README_APP file](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md) which explains everything about the project.
+> Możesz przyczynić się do ***Front-End Checklist App*** czytając [plik README_APP](https://github.com/thedaviddias/Front-End-Checklist/blob/master/README_APP.md), który wyjaśnia wszystko odnośnie projektu.
 
 ---
 
 ## Head
 
-> **Notes:** You can find [a list of everything](https://github.com/joshbuchea/HEAD) that could be found in the `<head>` of an HTML document.
+> **Uwagi:** Możesz znaleźć [listę wszystkiego](https://github.com/joshbuchea/HEAD) co powinno znaleźć się w `<head>` dokumentu HTML.
 
 ### Meta tag
 
-* [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+* [ ] **Doctype:** ![High][high_img] Doctype to HTML5 i znajduje się na górze wszystkich stron HTML.
 
 ```html
 <!doctype html> <!-- HTML5 -->
@@ -84,47 +84,47 @@ Some resources possess an emoticon to help you understand which type of content 
 
 > * 📖 [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*The next 2 meta tags (Charset and Viewport) need to come first in the head.*
+*Następne 2 meta tagi (Charset oraz Viewport) muszą być na pierwszym miejscu w head.*
 
-* [ ] **Charset:** ![High][high_img] The charset (UTF-8) is declared correctly.
+* [ ] **Charset:** ![High][high_img] Charset (UTF-8) jest zadeklarowany poprawnie.
 
 ```html
-<!-- Set character encoding for the document -->
+<!-- Ustaw kodowanie znaków dla dokumentu -->
 <meta charset="utf-8">
 ```
 
-* [ ] **Viewport:** ![High][high_img] The viewport is declared correctly.
+* [ ] **Viewport:** ![High][high_img] Viewport jest zadeklarowany poprawnie.
 
 ```html
-<!-- Viewport for responsive web design -->
+<!-- Viewport do responsywnego projektowania stron internetowych -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 ```
 
-* [ ] **Title:** ![High][high_img] A title is used on all pages (SEO: Google calculates the pixel width of the characters used in the title, and it cuts off between 472 and 482 pixels. The average character limit would be around 55-characters).
+* [ ] **Title:** ![High][high_img] Tytuł jest używany na wszystkich stronach (SEO: Google oblicza szerokość pikseli znaków użytych w tytule i odcina od 472 do 482 pikseli. Średni limit znaków wynosiłby około 55 znaków).
 
 ```html
-<!-- Document Title -->
-<title>Page Title less than 55 characters</title>
+<!-- Tytuł dokumentu -->
+<title>Tytuł strony z mniej niż 55 znaków</title>
 ```
 
 > * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 > * 🛠 [SERP Snippet Generator](https://www.sistrix.com/serp-snippet-generator/)
 
-* [ ] **Description:** ![High][high_img] A meta description is provided, it is unique and doesn't possess more than 150 characters.
+* [ ] **Opis:** ![High][high_img] Opis meta jest podany, jest unikalny i nie ma więcej niż 150 znaków.
 
 ```html
-<!-- Meta Description -->
-<meta name="description" content="Description of the page less than 150 characters">
+<!-- Opis Meta -->
+<meta name="description" content="Opis strony, mniej niż 150 znaków">
 ```
 
 > * 📖 [Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
-* [ ] **Favicons:** ![Medium][medium_img] Each favicon has been created and displays correctly. If you have only a `favicon.ico`, put it at the root of your site. Normally you won't need to use any markup. However, it's still good practice to link to it using the example below. Today, **PNG format is recommended** over `.ico` format (dimensions: 32x32px).
+* [ ] **Favicons:** ![Medium][medium_img] Każdy favicon został utworzony i wyświetla się poprawnie. Jeśli masz tylko `favicon.ico`, umieść go w katalogu głównym swojej witryny. Zwykle nie musisz używać żadnych znaczników. Jednak nadal dobrą praktyką jest łączenie się z nią za pomocą poniższego przykładu. Dzisiaj, **format PNG jest zalecany** zamiast formatu `.ico` (wymiary: 32x32px).
 
 ```html
-<!-- Standard favicon -->
+<!-- Standardowy favicon -->
 <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
-<!-- Recommended favicon format -->
+<!-- Zalecany format favicon -->
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
@@ -134,17 +134,17 @@ Some resources possess an emoticon to help you understand which type of content 
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Web App Meta:** ![Low][low_img] Apple meta-tags are present.
+* [ ] **Apple Web App Meta:** ![Low][low_img] Metatagi Apple są obecne.
 
 ```html
-<!-- Apple Touch Icon (at least 200x200px) -->
+<!-- Apple Touch Icon (przynajmniej 200x200px) -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
 
-<!-- To run web application in full-screen -->
+<!-- Aby uruchomić aplikację internetową na pełnym ekranie -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Status Bar Style (see Supported Meta Tags below for available values) -->
-<!-- Has no effect unless you have the previous meta tag -->
+<!-- Status Bar Style (zobacz Supported Meta Tags poniżej dla dostępnych wartości) -->
+<!-- Nie działa, chyba że masz poprzedni metatag -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 ```
 
