@@ -42,13 +42,13 @@ Opiera się ona na wieloletnim doświadczeniu programistów frontend, a dodatki 
 2. **[HTML](#html)**
 3. **[Webfonts](#webfonts)**
 4. **[CSS](#css)**
-5. **[Images](#images)**
+5. **[Obrazy](#obrazy)**
 6. **[JavaScript](#javascript)**
-7. **[Security](#security)**
-8. **[Performance](#performance-1)**
-9. **[Accessibility](#accessibility)**
+7. **[Bezpieczeństwo](#bezpieczeństwo)**
+8. **[Wydajność](#wydajność-1)**
+9. **[Dostępność](#dostępność)**
 10. **[SEO](#seo)**
-11. **[Translations](#translations)**
+11. **[Tłumaczenia](#tłumaczenia)**
 
 ---
 
@@ -342,39 +342,39 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 > **Uwagi:** Rzuć okiem na [Wytyczne CSS](https://cssguidelin.es/) oraz [Wytyczne Sass](https://sass-guidelin.es/) obserwowane przez większość programistów Front-End. Jeśli masz wątpliwości co do właściwości CSS, możesz odwiedzić [CSS Reference](http://cssreference.io/). Jest też krótki [Code Guide](http://codeguide.co/) dla spójności.
 
-* [ ] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
-* [ ] **CSS Print:** ![Medium][medium_img] A print stylesheet is provided and is correct on each page.
-* [ ] **Preprocessors:** ![Low][low_img] Your project is using a CSS preprocessor (e.g [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
-* [ ] **Unique ID:** ![High][high_img] If IDs are used, they are unique to a page.
-* [ ] **Reset CSS:** ![High][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. *(If you are using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)*
+* [ ] **Responsive Web Design:** ![High][high_img] Strona korzysta z responsywnego projektowania stron internetowych.
+* [ ] **CSS Print:** ![Medium][medium_img] Arkusz stylów wydruku jest dostarczony i jest poprawny na każdej stronie.
+* [ ] **Preprocessors:** ![Low][low_img] Twój projekt korzysta z preprocesora CSS (np. [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), [Stylus](http://stylus-lang.com/)).
+* [ ] **Unique ID:** ![High][high_img] Jeśli używane są identyfikatory, są one unikalne dla strony.
+* [ ] **Reset CSS:** ![High][high_img] Reset CSS (reset, normalizacja lub restart) jest używany i aktualny. *(Jeśli używasz frameworka CSS, takiego jak Bootstrap lub Foundation, normalizacja jest już w nim zawarta.)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-* [ ] **JS prefix:** ![Low][low_img] All classes (or id- used in JavaScript files) begin with **js-** and are not styled into the CSS files.
+* [ ] **JS prefix:** ![Low][low_img] Wszystkie klasy (lub id- używane w plikach JavaScript) zaczynają się od **js-** i nie są stylizowane na pliki CSS.
 
 ```html
 <div id="js-slider" class="my-slider">
-<!-- Or -->
+<!-- Lub -->
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **embedded or inline CSS:** ![High][high_img] Avoid at all cost embedding CSS in `<style>` tags or using inline CSS: only use for valid reasons (e.g. background-image for slider, critical CSS).
-* [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
+* [ ] **embedded or inline CSS:** ![High][high_img] Unikaj za wszelką cenę osadzania CSS w tagach `<style>` lub używania wbudowanego CSS: używaj tylko z ważnych powodów (np. background-image dla slider, critical CSS).
+* [ ] **Vendor prefixes:** ![High][high_img] Prefiksy dostawców CSS są używane i są generowane zgodnie ze zgodnością obsługi przeglądarki.
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
-### Performance
+### Wydajność
 
-- [ ] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file *(Not for HTTP/2)*.
-- [ ] **Minification:** ![High][high_img] All CSS files are minified.
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [ ] **Konkatenacja:** ![High][high_img] Pliki CSS są łączone w jednym pliku *(Nie dla HTTP/2)*.
+- [ ] **Minifikacja:** ![High][high_img] Wszystkie pliki CSS są minifikowane.
+- [ ] **Non-blocking:** ![Medium][medium_img] Pliki CSS muszą być nieblokujące, aby DOM nie zajmował dużo czasu podczas ładowania.
 
 > * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
 > * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
-- [ ] **Unused CSS:** ![Low][low_img] Remove unused CSS.
+- [ ] **Nieużywany CSS:** ![Low][low_img] Usuń nieużywany CSS.
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/)
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
@@ -382,28 +382,28 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 > * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 
-### CSS testing
+### Testowanie CSS
 
-* [ ] **Stylelint:** ![High][high_img] All CSS or SCSS files are without any errors.
+* [ ] **Stylelint:** ![High][high_img] Wszystkie pliki CSS lub SCSS są bez żadnych błędów.
 
 > * 🛠 [stylelint, a CSS linter](https://stylelint.io/)
 > * 📖 [Sass guidelines](https://sass-guidelin.es/)
 
-* [ ] **Responsive web design:** ![High][high_img] All pages were tested at the following breakpoints: 320px, 768px, 1024px (can be more / different according to your analytics).
+* [ ] **Responsive web design:** ![High][high_img] Wszystkie strony zostały przetestowane w następujących breakpointach: 320px, 768px, 1024px (mogą być bardziej / różne w zależności od danych analitycznych).
 
-* [ ] **CSS Validator:** ![Medium][medium_img] The CSS was tested and pertinent errors were corrected.
+* [ ] **Walidator CSS:** ![Medium][medium_img] CSS został przetestowany i odpowiednie błędy zostały poprawione.
 
 > * 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-* [ ] **Desktop Browsers:** ![High][high_img] All pages were tested on all current desktop browsers (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
-* [ ] **Mobile Browsers:**  ![High][high_img] All pages were tested on all current mobile browsers (Native browser, Chrome, Safari...).
-* [ ] **OS:**  ![High][high_img] All pages were tested on all current OS (Windows, Android, iOS, Mac...).
+* [ ] **Przeglądarki stacjonarne:** ![High][high_img] Wszystkie strony zostały przetestowane we wszystkich obecnych przeglądarkach na komputery (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
+* [ ] **Przeglądarki mobilne:**  ![High][high_img] Wszystkie strony zostały przetestowane we wszystkich obecnych przeglądarkach mobilnych (Native browser, Chrome, Safari...).
+* [ ] **OS:**  ![High][high_img] Wszystkie strony zostały przetestowane na wszystkich obecnych systemach operacyjnych (Windows, Android, iOS, Mac...).
 
-- [ ] **Design fidelity:** ![Low][low_img] Depending on the project and the quality of the creatives, you may be asked to be close to the design. You can use some tools to compare creatives with your code implementation and ensure consistency.
+- [ ] **Dokładność projektu:** ![Low][low_img] W zależności od projektu i jakości creatives możesz zostać poproszony o zbliżenie się do projektowania. Możesz użyć niektórych narzędzi do porównania creatives z implementacją kodu i zapewnienia spójności.
 
 > [Pixel Perfect - Chrome Extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
-* [ ] **Reading direction:** ![High][high_img] All pages need to be tested for LTR and RTL languages if they need to be supported.
+* [ ] **Kierunek czytania:** ![High][high_img] Wszystkie strony muszą zostać przetestowane pod kątem języków LTR i RTL, jeśli wymagają obsługi.
 
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
@@ -412,36 +412,36 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 ---
 
-## Images
+## Obrazy
 
-> **Uwagi:** For a complete understanding of image optimization, check the free ebook **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
+> **Uwagi:** Aby w pełni zrozumieć optymalizację obrazu, sprawdź bezpłatny ebook **[Essential Image Optimization](https://images.guide/)** od Addy Osmani.
 
-### Best practices
+### Najlepsze praktyki
 
-* [ ] **Optimization:** ![High][high_img] All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).
+* [ ] **Optymalizacja:** ![High][high_img] Wszystkie obrazy są zoptymalizowane do wyświetlania w przeglądarce. Format stron internetowych można zastosować do stron krytycznych (takich jak strona główna).
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
-> * 🛠 Use [ImageOptim](https://imageoptim.com/) to optimise your images for free.
-> * 🛠 Use [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) for image optimization in real time.
-> * 🛠 Use [Kraken.io](https://kraken.io/web-interface) awesome alternative for both png and jpg optimization. Up to 1mb per files on free plan.
-> * 🛠 [TinyPNG](https://tinypng.com/) losslessly optimises png, apng (animated png) and jpg images. Free and paid version available.
-> * 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) jpg-like compression for transparent images using svg masking.
-> * 🛠 [SVGO](https://github.com/svg/svgo) a Nodejs-based tool for optimizing SVG vector graphics files.
-> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) a web-based GUI version of SVGO for optimising your svgs online.
+> * 🛠 Użyj [ImageOptim](https://imageoptim.com/) aby zoptymalizować swoje zdjęcia za darmo.
+> * 🛠 Użyj [KeyCDN Image Processing](https://www.keycdn.com/support/image-processing) do optymalizacji obrazu w czasie rzeczywistym.
+> * 🛠 Użyj [Kraken.io](https://kraken.io/web-interface), świetna alternatywa zarówno dla optymalizacji png, jak i jpg. Do 1 MB na pliki w abonamencie darmowym.
+> * 🛠 [TinyPNG](https://tinypng.com/) losslessly optymalizuje obrazy png, apng (animowane png) i jpg. Dostępna wersja bezpłatna i płatna.
+> * 🛠 [ZorroSVG](http://quasimondo.com/ZorroSVG/) jpg-like kompresja dla przezroczystych obrazów przy użyciu maskowania svg.
+> * 🛠 [SVGO](https://github.com/svg/svgo) oparte na Nodejs narzędzie do optymalizacji plików grafiki wektorowej SVG.
+> * 🛠 [SVGOMG](https://jakearchibald.github.io/svgomg/) internetowa wersja GUI SVGO do optymalizacji plików svg online.
 
 
-* [ ] **Picture/Srcset:** ![Medium][medium_img] You use picture/srcset to provide the most appropriate image for the current viewport of the user.
+* [ ] **Picture/Srcset:** ![Medium][medium_img] Używasz picture/srcset, aby zapewnić najbardziej odpowiedni obraz dla bieżącego viewportu użytkownika.
 
 > * 📖 [How to Build Responsive Images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
 
-* [ ] **Retina:** ![Low][low_img] You provide layout images 2x or 3x, support retina display.
-* [ ] **Sprite:** ![Medium][medium_img] Small images are in a sprite file (in the case of icons, they can be in an SVG sprite image).
-* [ ] **Width and Height:** ![High][high_img] Set `width` and `height` attributes on `<img>` if the final rendered image size is known (can be omitted for CSS sizing).
-* [ ] **Alternative text:** ![High][high_img] All `<img>` have an alternative text which describes the image visually.
+* [ ] **Retina:** ![Low][low_img] Zapewniasz obrazy układu 2x lub 3x, obsługuje wyświetlanie retina.
+* [ ] **Sprite:** ![Medium][medium_img] Małe obrazy znajdują się w pliku ikonki (w przypadku ikon mogą być w obrazku ikonki SVG).
+* [ ] **Szerokość i wysokość:** ![High][high_img] Ustaw atrybuty `width` i `height` na `<img>` jeśli znany jest ostateczny rozmiar renderowanego obrazu (można go pominąć przy określaniu rozmiaru CSS).
+* [ ] **Alternatywny tekst:** ![High][high_img] Wszystkie `<img>` mają alternatywny tekst, który opisuje obraz wizualnie.
 
 > * 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
 
-* [ ] **Lazy loading:** ![Medium][medium_img] Images are lazyloaded (A noscript fallback is always provided).
+* [ ] **Lazy loading:** ![Medium][medium_img] Obrazy są ładowane lazyloaded (zawsze dostępna jest rezerwowa kopia zapasowa).
 
 **[⬆ powrót do góry](#spis-treści)**
 
@@ -449,42 +449,42 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 ## JavaScript
 
-### Best practices
+### Najlepsze praktyki
 
-* [ ] **JavaScript Inline:** ![High][high_img] You don't have any JavaScript code inline (mixed with your HTML code).
-* [ ] **Concatenation:** ![High][high_img] JavaScript files are concatenated.
-* [ ] **Minification:** ![High][high_img] JavaScript files are minified (you can add the `.min` suffix).
+* [ ] **JavaScript Inline:** ![High][high_img] Nie masz kodu inline JavaScript (zmieszanego z kodem HTML).
+* [ ] **Konkatenacja:** ![High][high_img] Pliki JavaScript są łączone.
+* [ ] **Minifikacja:** ![High][high_img] Pliki JavaScript są minifikowane (możesz dodać sufiks `.min`).
 
 > * 📖 [Minify Resources (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
-* [ ] **JavaScript security:** ![High][high_img]
+* [ ] **Bezpieczeństwo JavaScript:** ![High][high_img]
 
 > * 📖 [Guidelines for Developing Secure Applications Utilizing JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
-* [ ] **`noscript` tag:** ![Medium][medium_img] Use `<noscript>` tag in the HTML body if a script type on the page is unsupported or if scripting is currently turned off in the browser. This will be helpful in client-side rendering heavy apps such as React.js, see [examples](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
+* [ ] **`noscript` tag:** ![Medium][medium_img] Uzyj tagu `<noscript>` w body HTML, jeśli typ skryptu na stronie nie jest obsługiwany lub skrypty są obecnie wyłączone w przeglądarce. Będzie to pomocne w renderowaniu ciężkich aplikacji, takich jak React.js, po stronie klienta, patrz [przykłady](https://webdesign.tutsplus.com/tutorials/quick-tip-dont-forget-the-noscript-element--cms-25498).
 
 ```html
 <noscript>
-  You need to enable JavaScript to run this app.
+  Aby uruchomić tę aplikację, musisz włączyć JavaScript.
 </noscript>
 ```
 
-* [ ] **Non-blocking:** ![Medium][medium_img] JavaScript files are loaded asynchronously using `async` or deferred using `defer` attribute.
+* [ ] **Non-blocking:** ![Medium][medium_img] Pliki JavaScript są ładowane asynchronicznie za pomocą `async` lub odroczone za pomocą atrybutu `defer`.
 
 > * 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
 
-* [ ] **Optimized and updated JS libraries:** ![Medium][medium_img] All JavaScript libraries used in your project are necessary (prefer Vanilla Javascript for simple functionalities), updated to their latest version and don't overwhelm your JavaScript with unnecessary methods.
+* [ ] **Zoptymalizowane i zaktualizowane biblioteki JS:** ![Medium][medium_img] Wszystkie biblioteki JavaScript używane w twoim projekcie są niezbędne (wolą Vanilla Javascript dla prostych funkcji), zaktualizowane do najnowszej wersji i nie przytłaczają JavaScript niepotrzebnymi metodami.
 
 > * 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
 > * 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
 
-* [ ] **Modernizr:** ![Low][low_img] If you need to target some specific features you can use a custom Modernizr to add classes in your `<html>` tag.
+* [ ] **Modernizr:** ![Low][low_img] Jeśli musisz kierować określone funkcje, możesz użyć niestandardowego Modernizr, aby dodać klasy do tagu `<html>`.
 
 > * 🛠 [Customize your Modernizr](https://modernizr.com/download?setclasses)
 
-### JavaScript testing
+### Testowanie JavaScript
 
-* [ ] **ESLint:** ![High][high_img] No errors are flagged by ESLint (based on your configuration or standards rules).
+* [ ] **ESLint:** ![High][high_img] Żadne błędy nie są oznaczane przez ESLint (w oparciu o zasady konfiguracji lub normy).
 
 > * 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
 
@@ -492,46 +492,46 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 ---
 
-## Security
+## Bezpieczeństwo
 
-### Scan and check your web site
+### Zeskanuj i sprawdź swoją stronę internetową
 
 > * [securityheaders.io](https://securityheaders.io/)
 > * [Observatory by Mozilla](https://observatory.mozilla.org/)
 
-### Best practices
+### Najlepsze praktyki
 
-* [ ] **HTTPS:** ![High][high_img] HTTPS is used on every page and for all external content (plugins, images...).
+* [ ] **HTTPS:** ![High][high_img] HTTPS jest używany na każdej stronie i dla wszystkich treści zewnętrznych (wtyczek, obrazów...).
 
 > * 🛠 [Let's Encrypt - Free SSL/TLS Certificates](https://letsencrypt.org/)
 > * 🛠 [Free SSL Server Test](https://www.ssllabs.com/ssltest/index.html)
 > * 📖 [Strict Transport Security](http://caniuse.com/#feat=stricttransportsecurity)
 
-* [ ] **HTTP Strict Transport Security (HSTS):** ![Medium][medium_img] The HTTP header is set to 'Strict-Transport-Security'.
+* [ ] **HTTP Strict Transport Security (HSTS):** ![Medium][medium_img] HTTP header jest ustawiony na 'Strict-Transport-Security'.
 
 > * 🛠 [Check HSTS preload status and eligibility](https://hstspreload.org/)
 > * 📖 [HTTP Strict Transport Security Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)
 > * 📖 [Transport Layer Protection Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
 
-* [ ] **Cross Site Request Forgery (CSRF):** ![High][high_img] You ensure that requests made to your server-side are legitimate and originate from your website / app to prevent CSRF attacks.
+* [ ] **Cross Site Request Forgery (CSRF):** ![High][high_img] Zapewniasz, że żądania wysyłane na twoją stronę są prawidłowe i pochodzą z twojej witryny / aplikacji, aby zapobiec atakom CSRF.
 
 > * 📖 [Cross-Site Request Forgery (CSRF) Prevention Cheat Sheet  - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
 
-* [ ] **Cross Site Scripting (XSS):** ![High][high_img] Your page or website is free from XSS possible issues.
+* [ ] **Cross Site Scripting (XSS):** ![High][high_img] Twoja strona lub witryna jest wolna od możliwych problemów XSS.
 
 > * 📖 [XSS (Cross Site Scripting) Prevention Cheat Sheet  - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 > * 📖 [DOM based XSS Prevention Cheat Sheet  - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 
-* [ ] **Content Type Options:** ![Medium][medium_img] Prevents Google Chrome and Internet Explorer from trying to mime-sniff the content-type of a response away from the one being declared by the server.
+* [ ] **Content Type Options:** ![Medium][medium_img] Zapobiega próbom mime-sniff przez Google Chrome i Internet Explorer typu zawartości odpowiedzi od zadeklarowanej przez serwer.
 
 > * 📖 [X-Content-Type-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options)
 
-* [ ] **X-Frame-Options (XFO):** ![Medium][medium_img] Protects your visitors against clickjacking attacks.
+* [ ] **X-Frame-Options (XFO):** ![Medium][medium_img] Chroni odwiedzających przed atakami typu clickjacking.
 
 > * 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 > * 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
 
-* [ ] **Content Security Policy:** ![Medium][medium_img] Defines how content is loaded on your site and from where it is permitted to be loaded. Can also be used to protect against clickjacking attacks.
+* [ ] **Content Security Policy:** ![Medium][medium_img] Określa, w jaki sposób treść jest ładowana w twojej witrynie i skąd może być ładowana. Może być również stosowany do ochrony przed atakami typu clickjacking.
 
 > * 📖 [Content Security Policy - An Introduction - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
 > * 📖 [CSP Cheat Sheet - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
@@ -542,56 +542,56 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 ---
 
-## Performance
+## Wydajność
 
-### Best practices
+### Najlepsze praktyki
 
-- [ ] **Goals to achieve:** ![Medium][medium_img] Your pages should reach these goals:
-  - First Meaningful Paint under 1 second
-  - Time To Interactive under 5 seconds for the "average" configuration (a $200 Android on a slow 3G network with 400ms RTT and 400kbps transfer speed) and under 2 seconds for repeat visits
-  - Critical file size under 170Kb gzipped
+- [ ] **Cele do osiągnięcia:** ![Medium][medium_img] Twoje strony powinny osiągnąć następujące cele:
+  - First Meaningful Paint poniżej 1 sekundy
+  - Time To Interactive poniżej 5 sekund dla konfiguracji "średniej" (Android za 200 USD w wolnej sieci 3G z RTT 400 ms i prędkością transferu 400 kb / s) i poniżej 2 sekund na kolejne wizyty
+  - Krytyczny rozmiar pliku poniżej 170Kb gzipped
 
 > * 🛠 [Website Page Analysis](https://tools.pingdom.com)
 > * 🛠 [WebPageTest](https://www.webpagetest.org/)
 > * 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-* [ ] **Minified HTML:** ![Medium][medium_img] Your HTML is minified.
+* [ ] **Zminifikowany HTML:** ![Medium][medium_img] Twój HTML jest zminifikowany.
 
-* [ ] **Lazy loading:** ![Medium][medium_img] Images, scripts and CSS need to be lazy loaded to improve the response time of the current page (See details in their respective sections).
+* [ ] **Lazy loading:** ![Medium][medium_img] Obrazy, skrypty i CSS muszą być ładowane z opóźnieniem, aby skrócić czas odpowiedzi bieżącej strony (zobacz szczegóły w odpowiednich sekcjach).
 
-* [ ] **Cookie size:** ![Medium][medium_img] If you are using cookies be sure each cookie doesn't exceed 4096 bytes and your domain name doesn't have more than 20 cookies.
+* [ ] **Rozmiar cookie:** ![Medium][medium_img] Jeśli używasz plików cookie, upewnij się, że każdy plik cookie nie przekracza 4096 bajtów, a nazwa domeny nie zawiera więcej niż 20 plików cookie.
 
 > * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 > * 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
 
-* [ ] **Third party components:** ![Medium][medium_img] Third party iframes or components relying on external JS (like sharing buttons) are replaced by static components when possible, thus limiting calls to external APIs and keeping your user's activity private.
+* [ ] **Komponenty stron trzecich:** ![Medium][medium_img] Elementy iframe lub komponenty innych firm polegające na zewnętrznym JS (takie jak przyciski udostępniania) są w miarę możliwości zastępowane przez komponenty statyczne, ograniczając w ten sposób połączenia z zewnętrznymi interfejsami API i utrzymując prywatność użytkownika.
 
 > * 🛠 [Simple sharing buttons generator](https://simplesharingbuttons.com/)
 
-### Preparing upcoming requests
+### Przygotowywanie nadchodzących żądań
 
 > * 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
-* [ ] **DNS resolution:** ![Low][low_img] DNS of third-party services that may be needed are resolved in advance during idle time using `dns-prefetch`.
+* [ ] **DNS resolution:** ![Low][low_img] DNS usług stron trzecich, które mogą być potrzebne, są rozwiązywane z góry w czasie bezczynności przy użyciu `dns-prefetch`.
 
 ```html
 <link rel="dns-prefetch" href="https://example.com">
 ```
 
-* [ ] **Preconnection:** ![Low][low_img] DNS lookup, TCP handshake and TLS negotiation with services that will be needed soon is done in advance during idle time using `preconnect`.
+* [ ] **Preconnection:** ![Low][low_img] Wyszukiwanie DNS, uzgadnianie TCP i negocjacje TLS z usługami, które będą wkrótce potrzebne, są wykonywane z wyprzedzeniem w czasie bezczynności przy użyciu `preconnect`.
 
 ```html
 <link rel="preconnect" href="https://example.com">
 ```
 
-* [ ] **Prefetching:** ![Low][low_img] Resources that will be needed soon (e.g. lazy loaded images) are requested in advance during idle time using `prefetch`.
+* [ ] **Prefetching:** ![Low][low_img] Zasoby, które będą wkrótce potrzebne (np. leniwie załadowane obrazy) są wymagane z góry w czasie bezczynności przy użyciu `prefetch`.
 
 ```html
 <link rel="prefetch" href="image.png">
 ```
 
-* [ ] **Preloading:** ![Low][low_img] Resources needed in the current page (e.g. scripts placed at the end of `<body>`) in advance using `preload`.
+* [ ] **Preloading:** ![Low][low_img] Zasoby potrzebne na bieżącej stronie (np. skrypty umieszczone na końcu `<body>`) za pomocą `preload`.
 
 ```html
 <link rel="preload" href="app.js">
@@ -599,9 +599,9 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 > * 📖 [Difference between prefetch and preload](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
 
-### Performance testing
+### Test wydajności
 
-* [ ] **Google PageSpeed:** ![High][high_img] All your pages were tested (not only the homepage) and have a score of at least 90/100.
+* [ ] **Google PageSpeed:** ![High][high_img] Wszystkie twoje strony zostały przetestowane (nie tylko strona główna) i uzyskały wynik co najmniej 90/100.
 
 > * 🛠 [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 > * 🛠 [Test your mobile speed with Google](https://testmysite.withgoogle.com)
@@ -613,48 +613,48 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 ---
 
-## Accessibility
+## Dostępność
 
-> **Uwagi:** You can watch the playlist [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
+> **Uwagi:** Możesz obejrzeć listę odtwarzania [A11ycasts z Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
 
-### Best practices
+### Najlepsze praktyki
 
-- [ ] **Progressive enhancement:** ![Medium][medium_img] Major functionality like main navigation and search should work without JavaScript enabled.
+- [ ] **Progresywne ulepszanie:** ![Medium][medium_img] Główne funkcje, takie jak główna nawigacja i wyszukiwanie, powinny działać bez włączonej obsługi JavaScript.
 
 > * 📖 [Enable / Disable JavaScript in Chrome Developer Tools](https://www.youtube.com/watch?v=kBmvq2cE0D8)
 
-- [ ] **Color contrast:** ![Medium][medium_img] Color contrast should at least pass WCAG AA (AAA for mobile).
+- [ ] **Kontrast kolorów:** ![Medium][medium_img] Kontrast kolorów powinien co najmniej przejść WCAG AA (AAA dla urządzeń mobilnych).
 
 > * 🛠 [Contrast ratio](https://leaverou.github.io/contrast-ratio/)
 
-#### Headings
+#### Nagłówki
 
-* [ ] **H1:** ![High][high_img] All pages have an H1 which is not the title of the website.
-* [ ] **Headings:** ![High][high_img] Headings should be used properly and in the right order (H1 to H6).
+* [ ] **H1:** ![High][high_img] Wszystkie strony mają H1, który nie jest tytułem strony internetowej.
+* [ ] **Headings:** ![High][high_img] Nagłówki należy stosować prawidłowo i we właściwej kolejności (od H1 do H6).
 
 > * 📹 [Why headings and landmarks are so important -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-### Semantics
+### Semantyka
 
-- [ ] **Specific HTML5 input types are used:** ![Medium][medium_img] This is especially important for mobile devices that show customized keypads and widgets for different types.
+- [ ] **Używane są określone typy danych HTML5:** ![Medium][medium_img] Jest to szczególnie ważne w przypadku urządzeń mobilnych, które wyświetlają niestandardowe klawiatury i widżety dla różnych typów.
 
 > * 📖 [Mobile Input Types](http://mobileinputtypes.com/)
 
-### Form
+### Formularz
 
-* [ ] **Label:** ![High][high_img] A label is associated with each input form element. In case a label can't be displayed, use `aria-label` instead.
+* [ ] **Etykieta:** ![High][high_img] Etykieta jest powiązana z każdym elementem formularza wejściowego. Jeśli etykieta nie może zostać wyświetlona, użyj zamiast tego `aria-label`.
 
 > * 📖 [Using the aria-label attribute - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
-### Accessibility testing
+### Testy dostępności
 
-* [ ] **Accessibility standards testing:** ![High][high_img] Use the WAVE tool to test if your page respects the accessibility standards.
+* [ ] **Testowanie standardów dostępności:** ![High][high_img] Użyj narzędzia WAVE, aby sprawdzić, czy strona spełnia standardy dostępności.
 
 > * 🛠 [Wave testing](http://wave.webaim.org/)
 
-* [ ] **Keyboard navigation:** ![High][high_img] Test your website using only your keyboard in a previsible order. All interactive elements are reachable and usable.
-* [ ] **Screen-reader:** ![Medium][medium_img] All pages were tested in a screen-reader (VoiceOver, ChromeVox, NVDA or Lynx).
-* [ ] **Focus style:** ![High][high_img] If the focus is disabled, it is replaced by visible state in CSS.
+* [ ] **Nawigacja za pomocą klawiatury:** ![High][high_img] Przetestuj swoją stronę internetową, używając tylko klawiatury w przewidywalnej kolejności. Wszystkie elementy interaktywne są osiągalne i użyteczne.
+* [ ] **Screen-reader:** ![Medium][medium_img] Wszystkie strony zostały przetestowane w czytniku ekranu (VoiceOver, ChromeVox, NVDA lub Lynx).
+* [ ] **Focus style:** ![High][high_img] Jeśli fokus jest wyłączony, jest zastępowany widocznym stanem w CSS.
 
 > * 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
@@ -664,45 +664,45 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 ## SEO
 
-* [ ] **Google Analytics:** ![High][high_img] Google Analytics is installed and correctly configured.
+* [ ] **Google Analytics:** ![High][high_img] Google Analytics jest zainstalowany i poprawnie skonfigurowany.
 
 > * 🛠 [Google Analytics](https://analytics.google.com/analytics/web/)
 > * 🛠 [GA Checker (and others)](http://www.gachecker.com/)
 
-* [ ] **Headings logic:** ![Medium][medium_img] Heading text helps to understand the content in the current page.
+* [ ] **Logika nagłówków:** ![Medium][medium_img] Tekst nagłówka pomaga zrozumieć treść na bieżącej stronie.
 
 > * 🛠 [Tota11y, tab Headings](http://khan.github.io/tota11y/#Try-it)
 
-* [ ] **sitemap.xml:** ![High][high_img] A sitemap.xml exists and was submitted to Google Search Console (previously Google Webmaster Tools).
+* [ ] **sitemap.xml:** ![High][high_img] sitemap.xml istnieje i został przesłany do Google Search Console (wcześniej Google Webmaster Tools).
 
 > * 🛠 [Sitemap generator](https://websiteseochecker.com/html-sitemap-generator/)
 
-* [ ] **robots.txt:** ![High][high_img] The robots.txt is not blocking webpages.
+* [ ] **robots.txt:** ![High][high_img] robots.txt nie blokuje stron internetowych.
 
 > * 📖 [The robots.txt file](https://varvy.com/robottxt.html)
 > * 🛠 Test your robots.txt with [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
 
-* [ ] **Structured Data:** ![High][high_img] Pages using structured data are tested and are without errors. Structured data helps crawlers understand the content in the current page.
+* [ ] **Dane strukturalne:** ![High][high_img] Strony używające danych strukturalnych są testowane i nie zawierają błędów. Dane strukturalne pomagają crawlerom indeksującym zrozumieć treść na bieżącej stronie.
 
 > * 📖 [Introduction to Structured Data - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
 > * 📖 [RDFa - Linked Data in HTML](https://rdfa.info/)
 > * 📖 [JSON-LD](https://json-ld.org/)
 > * 📖 [Microdata](https://www.w3.org/TR/microdata/)
-> * 🛠 Test your page with the [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
-> * 🛠 Complete list of vocabularies that can be used as structured data. [Schema.org Full Hierarchy](http://schema.org/docs/full.html)
+> * 🛠 Przetestuj swoją stronę za pomocą [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
+> * 🛠 Pełna lista słowników, które można wykorzystać jako dane ustrukturyzowane. [Schema.org Full Hierarchy](http://schema.org/docs/full.html)
 
-* [ ] **Sitemap HTML:** ![Medium][medium_img] An HTML sitemap is provided and is accessible via a link in the footer of your website.
+* [ ] **Mapa strony HTML:** ![Medium][medium_img] Mapa strony HTML jest dostarczona i jest dostępna poprzez link w stopce witryny.
 
 > * 📖 [Sitemap guidelines - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
 
-* [ ] **Pagination link tags:** ![Medium][medium_img] Provide `rel="prev"` and `rel="next"` to indicate paginated content.
+* [ ] **Pagination link tags:** ![Medium][medium_img] Zapewnij `rel="prev"` i `rel="next"` w celu wskazania stronicowanych treści.
 
 > * 🛠 [Pagination (rel="prev/next") Testing Tool](https://technicalseo.com/seo-tools/rel-prev-next/)
 
 > * 📖 [Pagination guidelines - Google Support](https://support.google.com/webmasters/answer/1663744?hl=en)
 
 ```html
-<!-- Example: Pagination link tags for page 2 of a paginated list -->
+<!-- Przykład: Pagination link tags for page 2 of a paginated list -->
 <link rel="prev" href="https://example.com/?page=1">
 <link rel="next" href="https://example.com/?page=3">
 ```
@@ -711,9 +711,9 @@ Wizualizuj i generuj automatycznie nasze społecznościowe metatagi za pomocą [
 
 ---
 
-## Translations
+## Tłumaczenia
 
-The Front-End Checklist is also available in other languages. Thanks for all translators and their awesome work!
+Lista kontrolna frontend jest również dostępna w innych językach. Dziękujemy wszystkim tłumaczom za ich wspaniałą pracę!
 
 * 🇯🇵 Japanese: [miya0001/Front-End-Checklist](https://github.com/miya0001/Front-End-Checklist)
 * 🇪🇸 Spanish: [eoasakura/Front-End-Checklist-ES](https://github.com/eoasakura/Front-End-Checklist-ES)
@@ -731,7 +731,7 @@ The Front-End Checklist is also available in other languages. Thanks for all tra
 
 ## Front-End Checklist Badge
 
-If you want to show you are following the rules of the Front-End Checklist, put this badge on your README file!
+Jeśli chcesz pokazać, że przestrzegasz zasad Listy kontrolnej frontend, umieść tę odznakę w pliku README!
 
 ➔ [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 
@@ -743,50 +743,50 @@ If you want to show you are following the rules of the Front-End Checklist, put 
 
 ---
 
-## Contributing
+## Współtworzenie
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Otwórz issue lub PR, aby zasugerować zmiany lub uzupełnienia.**
 
-### Guide
+### Przewodnik
 
-The **Front-End Checklist** repository consists of two branches:
+Repo **Front-End Checklist** składa się z dwóch gałęzi:
 
 #### 1. `master`
 
-This branch consists of the `README.md` file that is automatically reflected on the [Front-End Checklist](https://frontendchecklist.io) website.
+Ta gałąź składa się z pliku `README.md` który jest automatycznie odzwierciedlany na stronie [Front-End Checklist](https://frontendchecklist.io).
 
 #### 2. `develop`
 
-This branch will be used to make some significant changes to the structure, content if needed. It is preferable to use the master branch to fix small errors or add a new item.
+Ta gałąź zostanie wykorzystana do wprowadzenia istotnych zmian w strukturze, w razie potrzeby zawartości. Lepiej jest użyć gałęzi głównej, aby naprawić małe błędy lub dodać nowy element.
 
-## Support
+## Wsparcie
 
-If you have any question or suggestion, don't hesitate to use Gitter or Twitter:
+Jeśli masz jakieś pytania lub sugestie, nie wahaj się skorzystać z Gittera lub Twittera:
 
 * [Chat on Gitter](https://gitter.im/Front-End-Checklist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 * [Facebook](https://www.facebook.com/frontendchecklist/)
 * [Twitter](https://twitter.com/thedaviddias)
 
-## Author
+## Autor
 
 **[David Dias](https://github.com/thedaviddias)**
 
-## Contributors
+## Współtwórcy
 
-This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
+Ten projekt istnieje dzięki wszystkim ludziom, którzy wnoszą swój wkład. [[Contribute]](.github/CONTRIBUTING.md).
 <a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
 
 
 ## Backers
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
+Dziękuję wszystkim naszym backers! 🙏 [[Become a backer](https://opencollective.com/front-end-checklist#backer)]
 
 <a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
 
 
-## Sponsors
+## Sponsorzy
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/front-end-checklist#sponsor)]
+Wesprzyj ten projekt, zostając sponsorem. Twoje logo pojawi się tutaj wraz z linkiem do twojej witryny. [[Zostań sponsorem](https://opencollective.com/front-end-checklist#sponsor)]
 
 <a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
@@ -799,7 +799,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/front-end-checklist/sponsor/8/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/front-end-checklist/sponsor/9/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/9/avatar.svg"></a>
 
-## License
+## Licencja
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
